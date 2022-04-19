@@ -11,7 +11,7 @@ class Book {
   }
 }
 
-let storage = new Books();
+const storage = new Books();
 if (localStorage.Books) {
   storage.array = JSON.parse(localStorage.Books);
 }
