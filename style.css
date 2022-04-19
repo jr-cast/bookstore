@@ -2,7 +2,9 @@ body {
     border: solid 4px green;
     width: 400px;
 }
-
+button{
+    box-shadow: 2px 1px 0px black;
+}
 h1 {
     text-align: center;
     padding-bottom: 10px;
@@ -23,6 +25,8 @@ hr {
 #userInput button {
     margin-left: 11em;
     border-radius: 0;
+     border: solid 2px black ;
+
 }
 
 ul {
@@ -30,7 +34,8 @@ ul {
     margin-left: 0.5em;
     margin-right: 0.5em;
     min-height: 10em;
-    padding: 0%;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 li {
