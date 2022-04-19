@@ -1,0 +1,27 @@
+body{
+    border: solid 2px green ;
+    max-width: 25%;
+}
+h1{
+    text-align: center;
+    padding-bottom: 10px;
+}
+form {
+    display: flex;
+    align-items: center;
+}
+ul{
+    border: solid 1px black;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+li{
+display: flex;
+align-items: center;
+}
+
+li button{
+    margin-left: 70px;
+    
+} 
