@@ -2,7 +2,7 @@
 const Book = {
   title: '',
   author: '',
-}
+};
 // Books Collection
 let Books = [];
 if (localStorage.Books) {
@@ -23,7 +23,7 @@ addBtn.addEventListener('click', () => {
     Books.push(book);
     bookTitle.value = '';
     author.value = '';
-    let stringData = JSON.stringify(Books);
+    const stringData = JSON.stringify(Books);
     localStorage.setItem('Books', stringData);
     window.location.reload();
   }
@@ -47,11 +47,11 @@ if (localStorage.Books) {
     rmvButton.id = `btn${i}`;
     rmvButton.className = 'rmv';
     li.appendChild(rmvButton);
-    const hr = document.createElement('hr')
+    const hr = document.createElement('hr');
     li.appendChild(hr);
     ul.appendChild(li);
   }
-};
+}
 
 // Remove books from collection and display
 for (let i = 0; i < document.getElementsByClassName('rmv').length; i += 1) {
@@ -59,17 +59,10 @@ for (let i = 0; i < document.getElementsByClassName('rmv').length; i += 1) {
   const titleName = Books[i].title;
   const list = document.getElementById(`${i}`);
   rmvButton.addEventListener('click', () => {
-    let filtered = Books.filter(Books => Books.title !== titleName);
-    console.log(filtered);
-    let stringData = JSON.stringify(filtered);
+    const filtered = Books.filter((Books) => Books.title !== titleName);
+    const stringData = JSON.stringify(filtered);
     localStorage.setItem('Books', stringData);
     list.remove();
     window.location.reload();
-  })
+  });
 }
-
-
-
-
-
-
