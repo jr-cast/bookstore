@@ -43,6 +43,7 @@ if (localStorage.Books) {
     li.style.listStyle = 'none';
     const addTitle = document.createElement('p');
     addTitle.innerHTML = JSON.parse(localStorage.Books)[i].title;
+    addTitle.innerHTML += ' by ';
     li.appendChild(addTitle);
     const addAuthor = document.createElement('p');
     addAuthor.innerHTML = JSON.parse(localStorage.Books)[i].author;

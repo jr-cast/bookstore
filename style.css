@@ -1,27 +1,54 @@
-body{
-    border: solid 2px green ;
-    max-width: 25%;
+body {
+    border: solid 4px green;
+    width: 400px;
 }
-h1{
+
+h1 {
     text-align: center;
     padding-bottom: 10px;
 }
-form {
+
+hr {
+    display: none;
+}
+
+#userInput {
+    display: flex;
+    gap: 0.5em;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+}
+
+#userInput button {
+    margin-left: 11em;
+    border-radius: 0;
+}
+
+ul {
+    border: solid 3px black;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    min-height: 10em;
+    padding: 0%;
+}
+
+li {
     display: flex;
     align-items: center;
-}
-ul{
-    border: solid 1px black;
-    margin-left: 1em;
-    margin-right: 1em;
+    justify-content: space-between;
+    width: 100%;
 }
 
-li{
-display: flex;
-align-items: center;
+li button {
+    margin-left: 10em;
+    border-radius: 0;
 }
 
-li button{
-    margin-left: 70px;
-    
-} 
+li p {
+    font-weight: 600;
+}
+
+li:nth-child(2n) {
+    background-color: lightgray;
+}
