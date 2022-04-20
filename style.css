@@ -1,59 +1,60 @@
 body {
-    border: solid 4px green;
-    width: 400px;
+  border: solid 4px green;
+  width: 400px;
 }
-button{
-    box-shadow: 2px 1px 0px black;
+
+button {
+  box-shadow: 2px 1px 0 black;
 }
+
 h1 {
-    text-align: center;
-    padding-bottom: 10px;
+  text-align: center;
+  padding-bottom: 10px;
 }
 
 hr {
-    display: none;
+  display: none;
 }
 
 #userInput {
-    display: flex;
-    gap: 0.5em;
-    flex-direction: column;
-    align-items: center;
-    padding: 1em;
-}
-
-#userInput button {
-    margin-left: 11em;
-    border-radius: 0;
-     border: solid 2px black ;
-
-}
-
-ul {
-    border: solid 3px black;
-    margin-left: 0.5em;
-    margin-right: 0.5em;
-    min-height: 10em;
-    padding-left: 5px;
-    padding-right: 5px;
-}
-
-li {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
+  display: flex;
+  gap: 0.5em;
+  flex-direction: column;
+  align-items: center;
+  padding: 1em;
 }
 
 li button {
-    margin-left: 10em;
-    border-radius: 0;
+  margin-left: 10em;
+  border-radius: 0;
+}
+
+#userInput button {
+  margin-left: 11em;
+  border-radius: 0;
+  border: solid 2px black;
+}
+
+ul {
+  border: solid 3px black;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+  min-height: 10em;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
 }
 
 li p {
-    font-weight: 600;
+  font-weight: 600;
 }
 
 li:nth-child(2n) {
-    background-color: lightgray;
+  background-color: lightgray;
 }

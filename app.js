@@ -1,10 +1,10 @@
-class Books {
-  constructor(array) {
+class Books { /* eslint-disable-line max-classes-per-file */
+  constructor(array) { /* eslint-disable-line no-unused-vars */
     this.array = [];
   }
 }
 
-class Book {
+class Book { /* eslint-disable-line max-classes-per-file */
   constructor(title, author) {
     this.title = title;
     this.author = author;
