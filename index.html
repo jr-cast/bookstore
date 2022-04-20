@@ -18,7 +18,7 @@
     <ul class="navLinks">
       <li class="aNavLink"><a href="#list">List</a>
       </li>
-      <li class="aNavLink"><a href="#new">Add New</a></li>
+      <li class="aNavLink"><a href="#new" onclick=toggleHidden()>Add New</a></li>
       <li class="aNavLink"><a href="#contact">Contact</a></li>
     </ul>
   </div>
@@ -27,11 +27,11 @@
   </div>
 
   <h1>All awesome books</h1>
-  <section class="shelfWrapper">
+  <section id="wrapper" class="shelfWrapper">
     <ul id="bookShelf">
     </ul>
   </section>
-  <section class="userInput">
+  <section id="addBook" class="userInput hidden">
     <h2>Add a new book</h2>
     <input id="title" type="text" placeholder="Title" required>
     <input id="author" type="text" placeholder="Author" required>

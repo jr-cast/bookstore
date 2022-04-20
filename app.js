@@ -76,3 +76,11 @@ for (let i = 0; i < document.getElementsByClassName('rmv').length; i += 1) {
     window.location.reload();
   });
 }
+
+//onclick function
+
+function toggleHidden(){
+  document.getElementById('wrapper').classList.toggle('hidden');
+  document.getElementById('addBook').classList.toggle('hidden');
+  
+}
