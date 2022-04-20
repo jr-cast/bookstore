@@ -47,6 +47,11 @@ hr {
   padding-left: 1em;
 }
 
+.aNavLink a{
+    text-decoration: none;
+    color:black;
+}
+
 #userInput {
   display: flex;
   gap: 0.5em;
@@ -88,4 +93,28 @@ hr {
 
 .item:nth-child(2n) {
   background-color: lightgray;
+}
+footer{
+   border: 3px solid black;
+   padding: 20px;
+}
+.contantInfo{
+    display: flex;
+    flex-direction: column;
+     border: 3px solid black;
+     padding-left: 5em;
+   padding:10em;
+     
+}
+.contantInfo h1{
+text-align: center;
+font-size: 2.5em;
+}
+
+.contantInfo p, 
+.contantInfo ul{
+font-size: 1.5em;
+}
+.hidden{
+    display: none;
 }
