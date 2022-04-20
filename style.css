@@ -1,6 +1,5 @@
 body {
-  border: solid 4px green;
-  width: 400px;
+  width: 98vw;
 }
 
 button {
@@ -16,6 +15,38 @@ hr {
   display: none;
 }
 
+
+.mainNav {
+  border: 3px solid black;
+  width: 97.5%;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 1em;
+  padding-right: 1em;
+  font-size: larger;
+  font-weight: bold;
+}
+
+.navLinks {
+  display: flex;
+  list-style: none;
+}
+
+.aNavLink:nth-child(1) {
+  padding-right: 1em;
+}
+
+.aNavLink:nth-child(2) {
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.aNavLink:nth-child(3) {
+  padding-left: 1em;
+}
+
 #userInput {
   display: flex;
   gap: 0.5em;
@@ -24,7 +55,7 @@ hr {
   padding: 1em;
 }
 
-li button {
+.item button {
   margin-left: 10em;
   border-radius: 0;
 }
@@ -35,7 +66,7 @@ li button {
   border: solid 2px black;
 }
 
-ul {
+.bookShelf {
   border: solid 3px black;
   margin-left: 0.5em;
   margin-right: 0.5em;
@@ -44,17 +75,17 @@ ul {
   padding-right: 5px;
 }
 
-li {
+.item {
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 100%;
 }
 
-li p {
+.item p {
   font-weight: 600;
 }
 
-li:nth-child(2n) {
+.item:nth-child(2n) {
   background-color: lightgray;
 }

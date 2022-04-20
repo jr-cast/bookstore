@@ -37,8 +37,9 @@ addBtn.addEventListener('click', () => {
 // Display localStorage Books Collection entries
 if (localStorage.Books) {
   for (let i = 0; i < JSON.parse(localStorage.Books).length; i += 1) {
-    const ul = document.querySelector('ul');
+    const ul = document.getElementById('bookShelf');
     const li = document.createElement('li');
+    li.className = 'item';
     li.id = `${i}`;
     li.style.listStyle = 'none';
     const addTitle = document.createElement('p');
