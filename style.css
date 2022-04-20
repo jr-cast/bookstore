@@ -38,6 +38,10 @@ hr {
   font-weight: bold;
 }
 
+#list {
+  color: blue;
+}
+
 .navLinks {
   display: flex;
   list-style: none;
@@ -58,9 +62,9 @@ hr {
   padding-left: 1em;
 }
 
-.aNavLink a{
-    text-decoration: none;
-    color:black;
+.aNavLink a {
+  text-decoration: none;
+  color: black;
 }
 
 .userInput {
@@ -69,12 +73,9 @@ hr {
   flex-direction: column;
   align-items: center;
   padding: 1em;
- border: 1px solid  red;
- width: 98%;
-height: 500px;
- margin-bottom: 2em;
-
-  
+  width: 98%;
+  height: 500px;
+  margin-bottom: 2em;
 }
 
 .item button {
@@ -82,13 +83,13 @@ height: 500px;
   border-radius: 0;
 }
 
- #addBtn {
+#addBtn {
   margin-left: 47em;
   border-radius: 0;
   border: solid 2px black;
   margin-top: 1.5em;
   font-size: 1.25em;
-  
+
 }
 
 #bookShelf {
@@ -104,7 +105,6 @@ height: 500px;
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  border: 1px solid black;
   height: 4.5em;
 }
 
@@ -116,34 +116,39 @@ height: 500px;
 .item:nth-child(2n) {
   background-color: lightgray;
 }
-footer{
-   border: 4px solid black;
-   padding: 20px;
-   font-weight: bold;
-   width: 97%;
-   min-width: 375px;
+
+footer {
+  border: 4px solid black;
+  padding: 20px;
+  font-weight: bold;
+  width: 97%;
+  min-width: 375px;
 }
 
-.contantInfo{
-    display: flex;
-    flex-direction: column;
-     border: 4px solid black;
-     padding-left: 5em;
-   padding:10em;
-     
-}
-.contantInfo h1{
-text-align: center;
-font-size: 2.5em;
-}
-
-.contantInfo p, 
-.contantInfo ul{
-font-size: 1.5em;
+.contantInfo {
+  display: flex;
+  flex-direction: column;
+  padding-left: 4em;
+  padding: 4em;
+  z-index: 99;
+  position: fixed;
+  background-color: white;
+  top: 5.3em;
+  font-size: 1.25em;
 }
 
-.hidden{
-    display: none;
+.contantInfo h1 {
+  text-align: center;
+  font-size: 2.5em;
+}
+
+.contantInfo p,
+.contantInfo ul {
+  font-size: 1.5em;
+}
+
+.hidden {
+  display: none;
 }
 
 .shelfWrapper {
@@ -166,16 +171,17 @@ font-size: 1.5em;
   padding-left: 2em;
 }
 
-input{
-width: 50%;
-font-size: 2em;
-padding: 20px;
-border:4px solid black;
+input {
+  width: 50%;
+  font-size: 2em;
+  padding: 20px;
+  border: 4px solid black;
 }
 
-#title{
-    margin-bottom: 1em;
+#title {
+  margin-bottom: 1em;
 }
-.userInput h2{
-    font-size: 4em;
+
+.userInput h2 {
+  font-size: 4em;
 }

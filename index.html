@@ -16,17 +16,17 @@
   <div class="mainNav">
     <p class="logo">Awesome Books</p>
     <ul class="navLinks">
-      <li class="aNavLink"><a href="#list">List</a>
+      <li class="aNavLink"><a id="list" href="#list" onclick=toggleList()>List</a>
       </li>
-      <li class="aNavLink"><a href="#new" onclick=toggleHidden()>Add New</a></li>
-      <li class="aNavLink"><a href="#contact">Contact</a></li>
+      <li class="aNavLink"><a id="new" href="#new" onclick=toggleAddNew()>Add New</a></li>
+      <li class="aNavLink"><a id="cont" href="#contact" onclick=toggleContact()>Contact</a></li>
     </ul>
   </div>
   <div class="date">
     20 April 2022, 15:00:00 pm
   </div>
 
-  <h1>All awesome books</h1>
+  <h1 id="mainTitle">All awesome books</h1>
   <section id="wrapper" class="shelfWrapper">
     <ul id="bookShelf">
     </ul>
@@ -38,13 +38,13 @@
     <button id="addBtn">Add</button>
   </section>
   <footer>Copyright 2022</footer>
-  <section class="contantInfo hidden">
+  <section id="contact" class="contantInfo hidden">
     <h1>Contact information</h1>
     <p>Do you have any question or you just to say "Hello"? You can reach out to us!</p>
     <ul class="contactList">
       <li>Our E-mail: random@gmail.com</li>
       <li>Our Phone numbers: +1234567890</li>
-      <li>Our address: streetname 22, B09987 city,country</li>
+      <li>Our address: streetname 22, B09987 City, Country</li>
     </ul>
   </section>
   <script src="app.js"></script>

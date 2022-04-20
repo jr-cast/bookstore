@@ -77,10 +77,64 @@ for (let i = 0; i < document.getElementsByClassName('rmv').length; i += 1) {
   });
 }
 
-//onclick function
-
-function toggleHidden(){
-  document.getElementById('wrapper').classList.toggle('hidden');
-  document.getElementById('addBook').classList.toggle('hidden');
+//onclick function List
+function toggleList(){
+  const wrapper = document.getElementById('wrapper');
+  const addNew =  document.getElementById('addBook');
+  const contact = document.getElementById('mainTitle');
+  const anchor = document.getElementById('list');
+  const anchorNew = document.getElementById('new');
   
+  if (list === false) {
+    list = true;
+    wrapper.classList.toggle('hidden');
+    addNew.classList.toggle('hidden');
+    contact.classList.toggle('hidden');
+    anchor.style.color = 'blue';
+    anchorNew.style.color = 'black';
+    return list;
+  }
 }
+
+//onclick function Add New
+let list = true;
+function toggleAddNew(){
+  const wrapper = document.getElementById('wrapper');
+  const addNew =  document.getElementById('addBook');
+  const contact = document.getElementById('mainTitle');
+  const anchorList = document.getElementById('list');
+  const anchorNew = document.getElementById('new');
+
+  
+  if (list === true) {
+    list = false;
+    wrapper.classList.toggle('hidden');
+    addNew.classList.toggle('hidden');
+    contact.classList.toggle('hidden');
+    anchorList.style.color = 'black';
+    anchorNew.style.color = 'blue';
+    return list;
+  }
+}
+
+// //onclick function contact
+// function toggleContact() {
+//   const info = document.getElementById('contact');
+//   const anchorList = document.getElementById('list');
+//   const anchorNew = document.getElementById('new');
+//   const anchorCont = document.getElementById('cont');
+//   const wrapper = document.getElementById('wrapper');
+//   const addNew =  document.getElementById('addBook');
+
+//   if (!list) {
+//   ;
+//   info.classList.toggle('hidden');
+//   anchorList.style.color = 'black';
+//   anchorNew.style.color = 'black';
+//   anchorCont.style.color = 'blue';
+//   wrapper.classList.toggle('hidden');
+//   // addNew.classList.toggle('hidden');
+//   // return addNew;
+//   return list;
+// }
+// }
