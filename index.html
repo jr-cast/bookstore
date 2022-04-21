@@ -5,21 +5,47 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <title>Awesome Books</title>
 </head>
 
 <body>
-  <h1>Awesome Books</h1>
-  <section>
-    <ul>
+  <div class="mainNav">
+    <p class="logo">Awesome Books</p>
+    <ul class="navLinks">
+      <li class="aNavLink"><a id="list" href="#list" onclick=toggleList()>List</a>
+      </li>
+      <li class="aNavLink"><a id="new" href="#new" onclick=toggleAddNew()>Add New</a></li>
+      <li class="aNavLink"><a id="cont" href="#contact">Contact</a></li>
+    </ul>
+  </div>
+  <p id="date" class="date"></p>
+
+  <h1 id="mainTitle">All awesome books</h1>
+  <section id="wrapper" class="shelfWrapper">
+    <ul id="bookShelf">
     </ul>
   </section>
-  <section id="userInput">
+  <section id="addBook" class="userInput hidden">
     <h2>Add a new book</h2>
     <input id="title" type="text" placeholder="Title" required>
     <input id="author" type="text" placeholder="Author" required>
-    <button id="addBtn">Add</button>
+    <div id="btncont">
+      <button id="addBtn">Add</button>
+    </div>
+  </section>
+  <footer id="foot">Copyright 2022</footer>
+  <section id="contact" class="contantInfo hidden">
+    <h1>Contact information</h1>
+    <p>Do you have any question or you just to say "Hello"? You can reach out to us!</p>
+    <ul class="contactList">
+      <li>Our E-mail: random@gmail.com</li>
+      <li>Our Phone numbers: +1234567890</li>
+      <li>Our address: streetname 22, B09987 City, Country</li>
+    </ul>
   </section>
   <script src="app.js"></script>
 </body>

@@ -37,21 +37,25 @@ addBtn.addEventListener('click', () => {
 // Display localStorage Books Collection entries
 if (localStorage.Books) {
   for (let i = 0; i < JSON.parse(localStorage.Books).length; i += 1) {
-    const ul = document.querySelector('ul');
+    const ul = document.getElementById('bookShelf');
     const li = document.createElement('li');
+    li.className = 'item';
     li.id = `${i}`;
     li.style.listStyle = 'none';
+    const cont = document.createElement('div');
+    cont.className = 'titleAuthor';
     const addTitle = document.createElement('p');
     addTitle.innerHTML = JSON.parse(localStorage.Books)[i].title;
     addTitle.innerHTML += ' by ';
-    li.appendChild(addTitle);
+    cont.appendChild(addTitle);
     const addAuthor = document.createElement('p');
     addAuthor.innerHTML = JSON.parse(localStorage.Books)[i].author;
-    li.appendChild(addAuthor);
+    cont.appendChild(addAuthor);
     const rmvButton = document.createElement('button');
     rmvButton.innerHTML = 'Remove';
     rmvButton.id = `btn${i}`;
     rmvButton.className = 'rmv';
+    li.appendChild(cont);
     li.appendChild(rmvButton);
     const hr = document.createElement('hr');
     li.appendChild(hr);
@@ -72,3 +76,64 @@ for (let i = 0; i < document.getElementsByClassName('rmv').length; i += 1) {
     window.location.reload();
   });
 }
+
+// Date
+const date = new Date();
+document.getElementById('date').innerHTML = date;
+
+// onclick function List
+function toggleList() {  /* eslint-disable-line*/
+  const wrapper = document.getElementById('wrapper');
+  const addNew = document.getElementById('addBook');
+  const title = document.getElementById('mainTitle');
+  const anchor = document.getElementById('list');
+  const anchorNew = document.getElementById('new');
+  const contact = document.getElementById('contact');
+  const footer = document.getElementById('foot');
+  wrapper.classList.remove('hidden');
+  addNew.classList.add('hidden');
+  title.classList.remove('hidden');
+  contact.classList.add('hidden');
+  anchor.style.color = 'blue';
+  anchorNew.style.color = 'black';
+  footer.classList.remove('foot');
+}
+
+// onclick function Add New
+function toggleAddNew() {  /* eslint-disable-line*/
+  const wrapper = document.getElementById('wrapper');
+  const addNew = document.getElementById('addBook');
+  const title = document.getElementById('mainTitle');
+  const anchorList = document.getElementById('list');
+  const anchorNew = document.getElementById('new');
+  const contact = document.getElementById('contact');
+  const footer = document.getElementById('foot');
+  wrapper.classList.add('hidden');
+  addNew.classList.remove('hidden');
+  title.classList.add('hidden');
+  contact.classList.add('hidden');
+  anchorList.style.color = 'black';
+  anchorNew.style.color = 'blue';
+  footer.classList.remove('foot');
+}
+
+// onclick function contact
+document.getElementById('cont').addEventListener('click', () => {
+  const contact = document.getElementById('contact');
+  const wrapper = document.getElementById('wrapper');
+  const addNew = document.getElementById('addBook');
+  const title = document.getElementById('mainTitle');
+  const footer = document.getElementById('foot');
+  const anchor = document.getElementById('list');
+  const anchorNew = document.getElementById('new');
+  const cont = document.getElementById('cont');
+
+  contact.classList.remove('hidden');
+  wrapper.classList.add('hidden');
+  title.classList.add('hidden');
+  addNew.classList.add('hidden');
+  footer.classList.add('foot');
+  anchor.style.color = 'black';
+  anchorNew.style.color = 'black';
+  cont.style.color = 'blue';
+});
