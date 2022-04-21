@@ -84,11 +84,14 @@ hr {
 }
 
 #addBtn {
-  margin-left: 47em;
+  /* margin-left: 47em; */
   border-radius: 0;
   border: solid 2px black;
-  margin-top: 1.5em;
+  /* margin-top: 1.5em; */
   font-size: 1.25em;
+  margin: 0;
+  /* padding: 0; */
+
 
 }
 
@@ -184,4 +187,11 @@ input {
 
 .userInput h2 {
   font-size: 4em;
+}
+#btncont{
+  display: flex;
+  justify-content: flex-end;
+  width: 52%;
+  margin-top: 1em;
+
 }

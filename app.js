@@ -138,3 +138,9 @@ function toggleAddNew(){
 //   return list;
 // }
 // }
+
+function displayDate(){
+const date = document.getElementById('date')
+date.innerHTML = Date();
+console.log(date.innerHTML)
+}
