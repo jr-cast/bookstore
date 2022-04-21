@@ -77,70 +77,57 @@ for (let i = 0; i < document.getElementsByClassName('rmv').length; i += 1) {
   });
 }
 
+// Date
+let date = new Date();
+document.getElementById('date').innerHTML = date;
+
 //onclick function List
-function toggleList(){
+function toggleList() {
   const wrapper = document.getElementById('wrapper');
-  const addNew =  document.getElementById('addBook');
-  const contact = document.getElementById('mainTitle');
+  const addNew = document.getElementById('addBook');
+  const title = document.getElementById('mainTitle');
   const anchor = document.getElementById('list');
   const anchorNew = document.getElementById('new');
-  
-  if (list === false) {
-    list = true;
-    wrapper.classList.toggle('hidden');
-    addNew.classList.toggle('hidden');
-    contact.classList.toggle('hidden');
-    anchor.style.color = 'blue';
-    anchorNew.style.color = 'black';
-    return list;
-  }
+  const contact = document.getElementById('contact');
+  const footer = document.getElementById('foot')
+  wrapper.classList.remove('hidden');
+  addNew.classList.add('hidden');
+  title.classList.remove('hidden');
+  contact.classList.add('hidden');
+  anchor.style.color = 'blue';
+  anchorNew.style.color = 'black';
+  footer.classList.remove('foot');
 }
 
 //onclick function Add New
-let list = true;
-function toggleAddNew(){
+function toggleAddNew() {
   const wrapper = document.getElementById('wrapper');
-  const addNew =  document.getElementById('addBook');
-  const contact = document.getElementById('mainTitle');
+  const addNew = document.getElementById('addBook');
+  const title = document.getElementById('mainTitle');
   const anchorList = document.getElementById('list');
   const anchorNew = document.getElementById('new');
-
-  
-  if (list === true) {
-    list = false;
-    wrapper.classList.toggle('hidden');
-    addNew.classList.toggle('hidden');
-    contact.classList.toggle('hidden');
-    anchorList.style.color = 'black';
-    anchorNew.style.color = 'blue';
-    return list;
-  }
+  const contact = document.getElementById('contact');
+  const footer = document.getElementById('foot')
+  wrapper.classList.add('hidden');
+  addNew.classList.remove('hidden');
+  title.classList.add('hidden');
+  contact.classList.add('hidden');
+  anchorList.style.color = 'black';
+  anchorNew.style.color = 'blue';
+  footer.classList.remove('foot');
 }
 
-// //onclick function contact
-// function toggleContact() {
-//   const info = document.getElementById('contact');
-//   const anchorList = document.getElementById('list');
-//   const anchorNew = document.getElementById('new');
-//   const anchorCont = document.getElementById('cont');
-//   const wrapper = document.getElementById('wrapper');
-//   const addNew =  document.getElementById('addBook');
+//onclick function contact
+document.getElementById('cont').addEventListener('click', () => {
+  const contact = document.getElementById('contact');
+  const wrapper = document.getElementById('wrapper');
+  const addNew = document.getElementById('addBook');
+  const title = document.getElementById('mainTitle');
+  const footer = document.getElementById('foot')
 
-//   if (!list) {
-//   ;
-//   info.classList.toggle('hidden');
-//   anchorList.style.color = 'black';
-//   anchorNew.style.color = 'black';
-//   anchorCont.style.color = 'blue';
-//   wrapper.classList.toggle('hidden');
-//   // addNew.classList.toggle('hidden');
-//   // return addNew;
-//   return list;
-// }
-// }
-
-function displayDate(){
-const date = document.getElementById('date')
-date.innerHTML = Date();
-console.log(date.innerHTML)
-}
+  contact.classList.remove('hidden');
+  wrapper.classList.add('hidden');
+  title.classList.add('hidden');
+  addNew.classList.add('hidden');
+  footer.classList.add('foot');
+});

@@ -19,6 +19,8 @@ button {
 
 h1 {
   text-align: center;
+  font-size: 2.5em;
+  margin-top: 0%;
 }
 
 hr {
@@ -188,10 +190,15 @@ input {
 .userInput h2 {
   font-size: 4em;
 }
-#btncont{
+
+#btncont {
   display: flex;
   justify-content: flex-end;
   width: 52%;
   margin-top: 1em;
 
+}
+
+.foot {
+  margin-top: 38em;
 }
