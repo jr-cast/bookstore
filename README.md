@@ -1,20 +1,24 @@
-# Awesome books: refactor to use JavaScript classes🏅!
+# Awesome books: a complete website with navigation 🗺️!
 
 In this project at microverse the main objectives were:
 
 Main objetives of this new project-feature is:
  
-* Use JavaScript classes instead of objects and arrays.
-* You can use objects and arrays, but do it inside classes.
-* Create class methods to add and remove books.
-* Maintain all of the original functionality of the application (i.e. no bugs were introduced while refactoring).
+Modify the Awesome books application to have:
+
+* A Navigation bar.
+* Three content sections:
+* Books list.
+* Add book form.
+* Contact info.
 * Don't use any library or framework, use only plain JavaScript.
 * Add CSS styles to the application to make it match this wireframe:
 
 ## Built With
 
 - HTML
-- Vanilla JavaScript
+- JavaScript
+- CSS
 
 
 ## Prerequisites

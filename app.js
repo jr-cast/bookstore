@@ -78,18 +78,18 @@ for (let i = 0; i < document.getElementsByClassName('rmv').length; i += 1) {
 }
 
 // Date
-let date = new Date();
+const date = new Date();
 document.getElementById('date').innerHTML = date;
 
-//onclick function List
-function toggleList() {
+// onclick function List
+function toggleList() {  /* eslint-disable-line*/
   const wrapper = document.getElementById('wrapper');
   const addNew = document.getElementById('addBook');
   const title = document.getElementById('mainTitle');
   const anchor = document.getElementById('list');
   const anchorNew = document.getElementById('new');
   const contact = document.getElementById('contact');
-  const footer = document.getElementById('foot')
+  const footer = document.getElementById('foot');
   wrapper.classList.remove('hidden');
   addNew.classList.add('hidden');
   title.classList.remove('hidden');
@@ -99,15 +99,15 @@ function toggleList() {
   footer.classList.remove('foot');
 }
 
-//onclick function Add New
-function toggleAddNew() {
+// onclick function Add New
+function toggleAddNew() {  /* eslint-disable-line*/
   const wrapper = document.getElementById('wrapper');
   const addNew = document.getElementById('addBook');
   const title = document.getElementById('mainTitle');
   const anchorList = document.getElementById('list');
   const anchorNew = document.getElementById('new');
   const contact = document.getElementById('contact');
-  const footer = document.getElementById('foot')
+  const footer = document.getElementById('foot');
   wrapper.classList.add('hidden');
   addNew.classList.remove('hidden');
   title.classList.add('hidden');
@@ -117,17 +117,23 @@ function toggleAddNew() {
   footer.classList.remove('foot');
 }
 
-//onclick function contact
+// onclick function contact
 document.getElementById('cont').addEventListener('click', () => {
   const contact = document.getElementById('contact');
   const wrapper = document.getElementById('wrapper');
   const addNew = document.getElementById('addBook');
   const title = document.getElementById('mainTitle');
-  const footer = document.getElementById('foot')
+  const footer = document.getElementById('foot');
+  const anchor = document.getElementById('list');
+  const anchorNew = document.getElementById('new');
+  const cont = document.getElementById('cont');
 
   contact.classList.remove('hidden');
   wrapper.classList.add('hidden');
   title.classList.add('hidden');
   addNew.classList.add('hidden');
   footer.classList.add('foot');
+  anchor.style.color = 'black';
+  anchorNew.style.color = 'black';
+  cont.style.color = 'blue';
 });

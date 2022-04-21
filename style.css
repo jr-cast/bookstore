@@ -27,7 +27,6 @@ hr {
   display: none;
 }
 
-
 .mainNav {
   border: 4px solid black;
   width: 97%;
@@ -89,12 +88,12 @@ hr {
   /* margin-left: 47em; */
   border-radius: 0;
   border: solid 2px black;
+
   /* margin-top: 1.5em; */
   font-size: 1.25em;
   margin: 0;
+
   /* padding: 0; */
-
-
 }
 
 #bookShelf {
@@ -133,7 +132,6 @@ footer {
 .contantInfo {
   display: flex;
   flex-direction: column;
-  padding-left: 4em;
   padding: 4em;
   z-index: 99;
   position: fixed;
@@ -196,7 +194,6 @@ input {
   justify-content: flex-end;
   width: 52%;
   margin-top: 1em;
-
 }
 
 .foot {
