@@ -42,10 +42,6 @@ Not familiar with node & npm, please visit:
 
 - https://docs.npmjs.com/downloading-and-installing-node-js-and-npm
 
-Check the templates on Figma website
-
-- https://www.figma.com/file/l7SqJ3ZfkAKih9sFxvWSR4/Microverse-Student-Project-1?node-id=0%3A1
-
 ## Authors
 
 :bust_in_silhouette: Jose Ramon
