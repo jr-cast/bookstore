@@ -89,7 +89,6 @@ const contact = document.getElementById('contact');
 const footer = document.getElementById('foot');
 const cont = document.getElementById('cont');
 
-
 // onclick function List
 function toggleList() {  /* eslint-disable-line*/
   wrapper.classList.remove('hidden');
