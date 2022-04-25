@@ -1,6 +1,12 @@
-class Books { /* eslint-disable-line max-classes-per-file */
-  constructor(array) { /* eslint-disable-line no-unused-vars */
-    this.array = [];
+class BooksRack { /* eslint-disable-line max-classes-per-file */
+  constructor() { /* eslint-disable-line no-unused-vars */
+    this.Books = [];
+  }
+
+  UpdateRack() {
+    if (localStorage.Books) {
+      this.Books = JSON.parse(localStorage.Books);
+    }
   }
 }
 
@@ -11,24 +17,23 @@ class Book { /* eslint-disable-line max-classes-per-file */
   }
 }
 
-const storage = new Books();
-if (localStorage.Books) {
-  storage.array = JSON.parse(localStorage.Books);
-}
-
 // populate local storage collection with user entries
 const addBtn = document.getElementById('addBtn');
+const bookTitle = document.getElementById('title');
+const author = document.getElementById('author');
+const storedBooks = new BooksRack();
+storedBooks.UpdateRack();
+let stringData = JSON.stringify(storedBooks.Books);
+
 addBtn.addEventListener('click', () => {
-  const bookTitle = document.getElementById('title');
-  const author = document.getElementById('author');
   if (!bookTitle.value || !author.value) {
     alert('Enter both book title and author please');
   } else {
     const book = new Book(bookTitle.value, author.value);
-    storage.array.push(book);
+    storedBooks.Books.push(book);
     bookTitle.value = '';
     author.value = '';
-    const stringData = JSON.stringify(storage.array);
+    stringData = JSON.stringify(storedBooks.Books);
     localStorage.setItem('Books', stringData);
     window.location.reload();
   }
@@ -66,10 +71,10 @@ if (localStorage.Books) {
 // Remove books from collection and display
 for (let i = 0; i < document.getElementsByClassName('rmv').length; i += 1) {
   const rmvButton = document.getElementById(`btn${i}`);
-  const titleName = storage.array[i].title;
+  const titleName = storedBooks.Books[i].title;
   const list = document.getElementById(`${i}`);
   rmvButton.addEventListener('click', () => {
-    const filtered = storage.array.filter((Books) => Books.title !== titleName);
+    const filtered = storedBooks.Books.filter((Books) => Books.title !== titleName);
     const stringData = JSON.stringify(filtered);
     localStorage.setItem('Books', stringData);
     list.remove();
