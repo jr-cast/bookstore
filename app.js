@@ -91,11 +91,8 @@ document.getElementById('date').innerHTML = date;
 const wrapper = document.getElementById('wrapper');
 const addNew = document.getElementById('addBook');
 const title = document.getElementById('mainTitle');
-const anchor = document.getElementById('list');
-const anchorNew = document.getElementById('new');
 const contact = document.getElementById('contact');
 const footer = document.getElementById('foot');
-const cont = document.getElementById('cont');
 
 // onclick function List
 function toggleList() {  /* eslint-disable-line*/
