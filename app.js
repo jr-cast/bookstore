@@ -100,9 +100,6 @@ function toggleList() {  /* eslint-disable-line*/
   addNew.classList.add('hidden');
   title.classList.remove('hidden');
   contact.classList.add('hidden');
-  // anchor.style.color = 'blue';
-  // anchorNew.style.color = 'black';
-  // cont.style.color = 'black';
   footer.classList.remove('foot');
 }
 
@@ -112,10 +109,7 @@ function toggleAddNew() {  /* eslint-disable-line*/
   addNew.classList.remove('hidden');
   title.classList.add('hidden');
   contact.classList.add('hidden');
-  // anchor.style.color = 'black';
-  // anchorNew.style.color = 'blue';
   footer.classList.remove('foot');
-  // cont.style.color = 'black';
 }
 
 // onclick function contact
@@ -125,7 +119,12 @@ document.getElementById('cont').addEventListener('click', () => {
   title.classList.add('hidden');
   addNew.classList.add('hidden');
   footer.classList.add('foot');
-  // anchor.style.color = 'black';
-  // anchorNew.style.color = 'black';
-  // cont.style.color = 'blue';
 });
+
+if (!localStorage || localStorage.Books === '[]') {
+  const booklist = document.getElementById('wrapper');
+  const notice = document.createElement('p');
+  notice.className = 'font-bold p-24 pt-60 text-center text-xl text-gray-500';
+  notice.innerHTML = 'Please add a book to start your collection';
+  booklist.appendChild(notice);
+}
