@@ -14,23 +14,30 @@
 </head>
 
 <body>
-  <div class="mainNav">
-    <p class="logo">Awesome Books</p>
+  <div class="mainNav p-6 pl-12 pr-12 w-full border-b-1 border-slate-600 shadow-slate-400 bg-white shadow-md">
+    <p class="logo text-4xl text-blue-500 font-bold">
+      BookStore&#174;
+    </p>
     <ul class="navLinks">
       <li class="aNavLink">
-        <a id="list" href="#list" onclick=toggleList()>List</a>
+        <a id=list href="#list" onclick=toggleList()
+          class="bg-blue-500 hover:bg-blue-700 py-2 px-4 rounded shadow-md shadow-slate-400">List</a>
       </li>
       <li class="aNavLink">
-        <a id="new" href="#new" onclick=toggleAddNew()>Add New</a>
+        <a id="new" href="#new" onclick=toggleAddNew()
+          class="bg-blue-500 hover:bg-blue-700 py-2 px-4 rounded shadow-md shadow-slate-400">
+          Add New
+        </a>
       </li>
       <li class="aNavLink">
-        <a id="cont" href="#contact">Contact</a>
+        <a id="cont" href="#contact"
+          class="bg-blue-500 hover:bg-blue-700 py-2 px-4 rounded shadow-md shadow-slate-400">Contact</a>
       </li>
     </ul>
   </div>
   <p id="date" class="date"></p>
 
-  <h1 id="mainTitle" class="text-3xl font-bold underline">All awesome books</h1>
+  <h1 id="mainTitle" class="text-3xl font-bold underline">All books</h1>
   <section id="wrapper" class="shelfWrapper">
     <ul id="bookShelf">
     </ul>
