@@ -29,11 +29,9 @@ hr {
 
 .mainNav {
   border-bottom: 1px solid black;
-  width: 100%;
   min-width: 375px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
   font-size: larger;
 }
 

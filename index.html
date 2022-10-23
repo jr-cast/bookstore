@@ -9,57 +9,60 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <!-- <link rel="stylesheet" href="style.css"> -->
   <title>Awesome Books</title>
 </head>
 
 <body>
-  <div class="mainNav p-6 pl-12 pr-12 w-full border-b-1 border-slate-600 shadow-blue-200 bg-white shadow-sm">
-    <p class="logo text-4xl text-blue-500 font-bold">
-      BookStore&#174;
-    </p>
-    <ul class="navLinks">
-      <li class="aNavLink">
-        <a id=list href="#list" onclick=toggleList()
-          class="bg-blue-500 hover:bg-blue-700 py-2 px-4 rounded shadow-md shadow-slate-400">List</a>
-      </li>
-      <li class="aNavLink">
-        <a id="new" href="#new" onclick=toggleAddNew()
-          class="bg-blue-500 hover:bg-blue-700 py-2 px-4 rounded shadow-md shadow-slate-400">
-          Add New
-        </a>
-      </li>
-      <li class="aNavLink">
-        <a id="cont" href="#contact"
-          class="bg-blue-500 hover:bg-blue-700 py-2 px-4 rounded shadow-md shadow-slate-400">Contact</a>
-      </li>
-    </ul>
-  </div>
-  <p id="date" class="date text-xs"></p>
-
-  <h1 id="mainTitle" class="text-3xl font-bold underline">All books</h1>
-  <section id="wrapper" class="shelfWrapper">
-    <ul id="bookShelf">
-    </ul>
-  </section>
-  <section id="addBook" class="userInput hidden">
-    <h2>Add a new book</h2>
-    <input id="title" type="text" placeholder="Title" required>
-    <input id="author" type="text" placeholder="Author" required>
-    <div id="btncont">
-      <button id="addBtn">Add</button>
+  <div class="app flex flex-col items-center">
+    <div
+      class="mainNav pt-6 pb-6 pl-2 pr-2 w-full shadow-blue-300 bg-white shadow-sm items-center border-b border-slate-400 flex justify-between lg:w-9/12 sm:pl-6 sm:pr-6">
+      <p class="logo text-xl text-blue-500 font-bold sm:text-3xl lg:text-4xl">
+        BookStore&#174;
+      </p>
+      <ul class="navLinks flex w-2/3 justify-between sm:justify-end">
+        <li class="aNavLink">
+          <a id=list href="#list" onclick=toggleList()
+            class="bg-blue-500 hover:bg-blue-700 py-2 px-4 text-white rounded shadow-md shadow-slate-400 text-md sm:ml-2">List</a>
+        </li>
+        <li class="aNavLink">
+          <a id="new" href="#new" onclick=toggleAddNew()
+            class="bg-blue-500 hover:bg-blue-700 py-2 px-4 text-white rounded shadow-md shadow-slate-400 text-md sm:ml-2">
+            Add New
+          </a>
+        </li>
+        <li class="aNavLink">
+          <a id="cont" href="#contact"
+            class="bg-blue-500 hover:bg-blue-700 py-2 px-4 text-white rounded shadow-md shadow-slate-400 text-md sm:ml-2">Contact</a>
+        </li>
+      </ul>
     </div>
-  </section>
-  <footer id="foot">Copyright 2022</footer>
-  <section id="contact" class="contantInfo hidden">
-    <h1>Contact information</h1>
-    <p>Do you have any question or you just to say "Hello"? You can reach out to us!</p>
-    <ul class="contactList">
-      <li>Our E-mail: random@gmail.com</li>
-      <li>Our Phone numbers: +1234567890</li>
-      <li>Our address: streetname 22, B09987 City, Country</li>
-    </ul>
-  </section>
+    <p id="date" class="date text-xs"></p>
+
+    <h1 id="mainTitle" class="text-3xl font-bold underline">All books</h1>
+    <section id="wrapper" class="shelfWrapper">
+      <ul id="bookShelf">
+      </ul>
+    </section>
+    <section id="addBook" class="userInput hidden">
+      <h2>Add a new book</h2>
+      <input id="title" type="text" placeholder="Title" required>
+      <input id="author" type="text" placeholder="Author" required>
+      <div id="btncont">
+        <button id="addBtn">Add</button>
+      </div>
+    </section>
+    <footer id="foot">Copyright 2022</footer>
+    <section id="contact" class="contantInfo hidden">
+      <h1>Contact information</h1>
+      <p>Do you have any question or you just to say "Hello"? You can reach out to us!</p>
+      <ul class="contactList">
+        <li>Our E-mail: random@gmail.com</li>
+        <li>Our Phone numbers: +1234567890</li>
+        <li>Our address: streetname 22, B09987 City, Country</li>
+      </ul>
+    </section>
+  </div>
   <script src="app.js"></script>
 </body>
 
