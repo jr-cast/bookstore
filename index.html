@@ -40,24 +40,27 @@
     <div class="date w-full flex justify-end pt-2 lg:w-9/12">
       <p id="date" class="date text-xs"></p>
     </div>
-    <h1 id="mainTitle" class="text-2xl pt-4 pb-2">Book Shelf</h1>
+    <h1 id="mainTitle" class="text-2xl pt-4 pb-2 font-bold text-slate-600">Book Shelf</h1>
     <section id="wrapper"
-      class="shelfWrapper border-blue-500 border-2 w-11/12 h-full rounded-lg shadow-blue-200 shadow-md mb-4">
+      class="shelfWrapper border-blue-500 border-2 w-11/12 h-full rounded-lg shadow-blue-200 shadow-md mb-4 lg:w-9/12">
       <ul id="bookShelf">
       </ul>
     </section>
-    <section id="addBook" class="userInput hidden">
-      <h2>Add a new book</h2>
-      <input id="title" type="text" placeholder="Title" required>
-      <input id="author" type="text" placeholder="Author" required>
+    <section id="addBook"
+      class="userInput hidden h-full p-8 flex flex-col justify-center w-full lg:w-9/12 lg:items-center">
+      <h2 class="mb-4 font-bold">Add a new book</h2>
+      <input id="title" type="text" placeholder="Title" required
+        class="border border-black w-full rounded p-2 mb-2 sm:w-3/4">
+      <input id="author" type="text" placeholder="Author" required
+        class="border border-black w-full rounded p-2 sm:w-3/4">
       <div id="btncont">
-        <button id="addBtn">Add</button>
+        <button id="addBtn"
+          class="bg-blue-500 hover:bg-blue-700 py-2 px-4 text-white rounded shadow-md shadow-slate-400 text-md sm:ml-2 mt-4">
+          Add
+        </button>
       </div>
     </section>
-    <footer id="foot" class="border-t-2 border-blue-400 w-full h-20 flex justify-center items-center">
-      <p class="tracking-wide">All rights reserved by the author</p>
-    </footer>
-    <section id="contact" class="contantInfo hidden">
+    <section id="contact" class="contantInfo hidden text-2xl h-full flex flex-col justify-center">
       <h1>Contact information</h1>
       <p>Do you have any question or you just to say "Hello"? You can reach out to us!</p>
       <ul class="contactList">
@@ -66,6 +69,9 @@
         <li>Our address: streetname 22, B09987 City, Country</li>
       </ul>
     </section>
+    <footer id="foot" class="border-t-2 border-blue-400 w-full h-20 flex justify-center items-center lg:w-9/12">
+      <p class="tracking-wide">All rights reserved by the author</p>
+    </footer>
   </div>
   <script src="app.js"></script>
 </body>

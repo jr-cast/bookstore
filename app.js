@@ -124,7 +124,7 @@ document.getElementById('cont').addEventListener('click', () => {
 if (!localStorage || localStorage.Books === '[]') {
   const booklist = document.getElementById('wrapper');
   const notice = document.createElement('p');
-  notice.className = 'font-bold p-24 pt-60 text-center text-xl text-gray-500';
+  notice.className = 'font-bold pt-64 text-center text-xl text-gray-500';
   notice.innerHTML = 'Please add a book to start your collection';
   booklist.appendChild(notice);
 }
