@@ -45,7 +45,7 @@ if (localStorage.Books) {
     const ul = document.getElementById('bookShelf');
     ul.className = 'flex flex-col justify-center items-center bg-slate-200';
     const li = document.createElement('li');
-    li.className = 'item border-b-2 p-6 border-slate-500 m-1 w-full flex flex-col justify-between bg-white hover:bg-blue-100 lg:flex-row lg:justify-between lg:items-center';
+    li.className = 'item border-b-2 p-6 border-slate-500 m-1 w-full flex flex-col justify-between bg-gray-100 rounded-lg hover:bg-blue-100 lg:flex-row lg:justify-between lg:items-center';
     li.id = `${i}`;
     li.style.listStyle = 'none';
     const cont = document.createElement('div');
