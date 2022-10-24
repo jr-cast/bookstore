@@ -1,38 +1,38 @@
 <div align="center">
 
   <img src="assets/logo.png" alt="logo" width="200" height="auto" />
-  <h1>Vanilla Bookstore with ES6</h1>
+  <h1>Vanilla Bookstore</h1>
     
 <!-- Badges -->
 <p>
-  <a href="https://github.com/jr-cast/bookstore-ES6/graphs/contributors">
-    <img src="https://img.shields.io/github/contributors/jr-cast/bookstore-ES6" alt="contributors" />
+  <a href="https://github.com/jr-cast/bookstore/graphs/contributors">
+    <img src="https://img.shields.io/github/contributors/jr-cast/bookstore" alt="contributors" />
   </a>
   <a href="">
-    <img src="https://img.shields.io/github/last-commit/jr-cast/bookstore-ES6" alt="last update" />
+    <img src="https://img.shields.io/github/last-commit/jr-cast/bookstore" alt="last update" />
   </a>
-  <a href="https://github.com/jr-cast/bookstore-ES6/network/members">
-    <img src="https://img.shields.io/github/forks/jr-cast/bookstore-ES6" alt="forks" />
+  <a href="https://github.com/jr-cast/bookstore/network/members">
+    <img src="https://img.shields.io/github/forks/jr-cast/bookstore" alt="forks" />
   </a>
-  <a href="https://github.com/jr-cast/bookstore-ES6/stargazers">
-    <img src="https://img.shields.io/github/stars/jr-cast/bookstore-ES6" alt="stars" />
+  <a href="https://github.com/jr-cast/bookstore/stargazers">
+    <img src="https://img.shields.io/github/stars/jr-cast/bookstore" alt="stars" />
   </a>
-  <a href="https://github.com/jr-cast/bookstore-ES6/issues/">
-    <img src="https://img.shields.io/github/issues/jr-cast/bookstore-ES6" alt="open issues" />
+  <a href="https://github.com/jr-cast/bookstore/issues/">
+    <img src="https://img.shields.io/github/issues/jr-cast/bookstore" alt="open issues" />
   </a>
-  <a href="https://github.com/jr-cast/bookstore-ES6/blob/master/LICENSE">
-    <img src="https://img.shields.io/github/license/jr-cast/bookstore-ES6.svg" alt="license" />
+  <a href="https://github.com/jr-cast/bookstore/blob/master/LICENSE">
+    <img src="https://img.shields.io/github/license/jr-cast/bookstore.svg" alt="license" />
   </a>
 </p>
    
 <h4>
-    <a href="https://jr-cast.github.io/bookstore-ES6/">View Demo</a>
+    <a href="https://vanilla-bookstore.netlify.app/">View Demo</a>
   <span> · </span>
-    <a href="https://github.com/jr-cast/bookstore-ES6">Documentation</a>
+    <a href="https://github.com/jr-cast/bookstore">Documentation</a>
   <span> · </span>
-    <a href="https://github.com/jr-cast/bookstore-ES6/issues/">Report Bug</a>
+    <a href="https://github.com/jr-cast/bookstore/issues/">Report Bug</a>
   <span> · </span>
-    <a href="https://github.com/jr-cast/bookstore-ES6/issues/">Request Feature</a>
+    <a href="https://github.com/jr-cast/bookstore/issues/">Request Feature</a>
 </h4>
 </div>
 
@@ -57,7 +57,7 @@
   <summary>Client</summary>
   <ul>
     <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">HTML</a></li>
-    <li><a href="https://www.javascript.com/">ES6 JavaScript</a></li>
+    <li><a href="https://www.javascript.com/">JavaScript</a></li>
     <li><a href="https://tailwindcss.com/">TailwindCSS</a></li>
   </ul>
 </details>
