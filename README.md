@@ -142,3 +142,4 @@ Distributed under the MIT license. See LICENSE for more information.
 - GitHub: [@jr-cast](https://github.com/jr-cast)
 - Twitter: [@josercastanos](https://twitter.com/josercastanos)
 - LinkedIn: [@jr-cast](https://linkedin.com/in/jr-cast)
+- Portfolio: [@jr-cast.dev](https://jr-cast.dev)
